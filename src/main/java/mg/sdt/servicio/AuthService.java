@@ -121,7 +121,7 @@ public class AuthService {
     }
 
     public void sendRecoverPassword(String email, String token) {
-        String url = "https://just-grace-production.up.railway.app/reset-password?token=" + token;
+        String url = "https://sdt-vercel.vercel.app/reset-password?token=" + token;
         String subject = "Recuperación de contraseña";
         String content = "<p>Haz clic en el siguiente enlace para restablecer tu contraseña:</p>"
                 + "<a href=\"" + url + "\">Restablecer contraseña</a>"
